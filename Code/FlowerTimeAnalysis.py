@@ -9,9 +9,9 @@ import matplotlib.pyplot as plt
 import pandas as pd
 
 # now, let's read in the file and choose where to save the figures. YOU WILL NEED TO CHANGE THESE!!
-filepath = "/Users/Sami/Documents/GitHub/Blueberry Data Analysis for Erin/Blueberry-Data-Analysis-for-Erin/Data/"
+filepath = "/Users/Sami/Documents/GitHub/Blueberry Data Analysis for Erin/Data/"
 filename = "flwrno.csv"
-filepath_to_save_figures = "/Users/Sami/Documents/GitHub/Blueberry Data Analysis for Erin/Blueberry-Data-Analysis-for-Erin/Results/"
+filepath_to_save_figures = "/Users/Sami/Documents/GitHub/Blueberry Data Analysis for Erin/Results/"
 
 df = pd.read_csv(filepath + filename)
 df.sort_values(by=['Flower #'])
