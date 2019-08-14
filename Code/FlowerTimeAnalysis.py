@@ -14,9 +14,14 @@ filename = "flwrno.csv"
 filepath_to_save_figures = "/Users/Sami/Documents/GitHub/Blueberry Data Analysis for Erin/Results/"
 
 df = pd.read_csv(filepath + filename)
-df.sort_values(by=['Flower #'])
+df = df.sort_values(by=['Date', 'Flower #'], ascending=[False, True])
 
 # note: Adam's and Adams are both captured here
+ordering_dates = ["6/4/2019", "6/5/2019", "6/6/2019", "6/7/2019", "6/10/2019",
+                  "6/11/2019", "6/13/2019"]
+ordering_flower_number = [0, 0, 0, 0, 0, 0, 0]
+rotation = 25
+
 A_Adams_dates = []
 C_Adams_dates = []
 E_Adams_dates = []
@@ -132,6 +137,8 @@ for index, row in df.iterrows():
 
 # Adams
 plt.figure(1)
+plt.scatter(ordering_dates, ordering_flower_number, marker='')
+plt.xticks(rotation=rotation)
 plt.scatter(A_Adams_dates, A_Adams_flower_number, c="b", label='Treatment A')
 plt.scatter(C_Adams_dates, C_Adams_flower_number, c='r', marker="*", label='Treatment C')
 plt.scatter(E_Adams_dates, E_Adams_flower_number, c='k', marker="x", label='Treatment E')
@@ -143,6 +150,8 @@ plt.savefig(filepath_to_save_figures + "Adams")
 
 # Isham
 plt.figure(2)
+plt.scatter(ordering_dates, ordering_flower_number, marker='')
+plt.xticks(rotation=rotation)
 plt.scatter(A_Isham_dates, A_Isham_flower_number, c="b", label='Treatment A')
 plt.scatter(C_Isham_dates, C_Isham_flower_number, c='r', marker="*", label='Treatment C')
 plt.scatter(E_Isham_dates, E_Isham_flower_number, c='k', marker="x", label='Treatment E')
@@ -154,6 +163,8 @@ plt.savefig(filepath_to_save_figures + "Isham")
 
 # Knoll
 plt.figure(3)
+plt.scatter(ordering_dates, ordering_flower_number, marker='')
+plt.xticks(rotation=rotation)
 plt.scatter(A_Knoll_dates, A_Knoll_flower_number, c="b", label='Treatment A')
 plt.scatter(C_Knoll_dates, C_Knoll_flower_number, c='r', marker="*", label='Treatment C')
 plt.scatter(E_Knoll_dates, E_Knoll_flower_number, c='k', marker="x", label='Treatment E')
@@ -165,6 +176,8 @@ plt.savefig(filepath_to_save_figures + "Knoll")
 
 # Charlotte
 plt.figure(4)
+plt.scatter(ordering_dates, ordering_flower_number, marker='')
+plt.xticks(rotation=rotation)
 plt.scatter(A_Charlotte_dates, A_Charlotte_flower_number, c="b", label='Treatment A')
 plt.scatter(C_Charlotte_dates, C_Charlotte_flower_number, c='r', marker="*", label='Treatment C')
 plt.scatter(E_Charlotte_dates, E_Charlotte_flower_number, c='k', marker="x", label='Treatment E')
@@ -176,6 +189,8 @@ plt.savefig(filepath_to_save_figures + "Charlotte")
 
 # Boutin
 plt.figure(5)
+plt.scatter(ordering_dates, ordering_flower_number, marker='')
+plt.xticks(rotation=rotation)
 plt.scatter(A_Boutin_dates, A_Boutin_flower_number, c="b", label='Treatment A')
 plt.scatter(C_Boutin_dates, C_Boutin_flower_number, c='r', marker="*", label='Treatment C')
 plt.scatter(E_Boutin_dates, E_Boutin_flower_number, c='k', marker="x", label='Treatment E')
@@ -187,6 +202,8 @@ plt.savefig(filepath_to_save_figures + "Boutin")
 
 # Full Belly
 plt.figure(6)
+plt.scatter(ordering_dates, ordering_flower_number, marker='')
+plt.xticks(rotation=rotation)
 plt.scatter(A_Full_Belly_dates, A_Full_Belly_flower_number, c="b", label='Treatment A')
 plt.scatter(C_Full_Belly_dates, C_Full_Belly_flower_number, c='r', marker="*", label='Treatment C')
 plt.scatter(E_Full_Belly_dates, E_Full_Belly_flower_number, c='k', marker="x", label='Treatment E')
@@ -198,6 +215,8 @@ plt.savefig(filepath_to_save_figures + "Full Belly")
 
 # Treatment A
 plt.figure(7)
+plt.scatter(ordering_dates, ordering_flower_number, marker='')
+plt.xticks(rotation=rotation)
 plt.scatter(A_Adams_dates, A_Adams_flower_number, c="b", label="Adam's")
 plt.scatter(A_Isham_dates, A_Isham_flower_number, c="g", label="Isham")
 plt.scatter(A_Knoll_dates, A_Knoll_flower_number, c="r", label="Knoll")
@@ -212,6 +231,8 @@ plt.savefig(filepath_to_save_figures + "Treatment A")
 
 # Treatment C
 plt.figure(8)
+plt.scatter(ordering_dates, ordering_flower_number, marker='')
+plt.xticks(rotation=rotation)
 plt.scatter(C_Adams_dates, C_Adams_flower_number, c="b", label="Adam's")
 plt.scatter(C_Isham_dates, C_Isham_flower_number, c="g", label="Isham")
 plt.scatter(C_Knoll_dates, C_Knoll_flower_number, c="r", label="Knoll")
@@ -226,6 +247,8 @@ plt.savefig(filepath_to_save_figures + "Treatment C")
 
 # Treatment E
 plt.figure(9)
+plt.scatter(ordering_dates, ordering_flower_number, marker='')
+plt.xticks(rotation=rotation)
 plt.scatter(E_Adams_dates, E_Adams_flower_number, c="b", label="Adam's")
 plt.scatter(E_Isham_dates, E_Isham_flower_number, c="g", label="Isham")
 plt.scatter(E_Knoll_dates, E_Knoll_flower_number, c="r", label="Knoll")
@@ -240,6 +263,8 @@ plt.savefig(filepath_to_save_figures + "Treatment E")
 
 # All - colored by treatment
 plt.figure(10)
+plt.scatter(ordering_dates, ordering_flower_number, marker='')
+plt.xticks(rotation=rotation)
 
 # A is blue
 plt.scatter(A_Adams_dates, A_Adams_flower_number, c='b', label="Treatment A")
@@ -273,6 +298,8 @@ plt.savefig(filepath_to_save_figures + "All Colored by Treatment")
 
 # All - colored by farm
 plt.figure(11)
+plt.scatter(ordering_dates, ordering_flower_number, marker='')
+plt.xticks(rotation=rotation)
 
 # Adams is blue
 plt.scatter(A_Adams_dates, A_Adams_flower_number, c='b', label="Adam's")
