@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d5b4002a-caad-4d3e-88cd-d8dd4f5ed6cd" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/FlowerTimeAnalysis.py" beforeDir="false" afterPath="$PROJECT_DIR$/FlowerTimeAnalysis.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -16,8 +15,11 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/FlowerTimeAnalysis.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="126">
-              <caret line="325" column="33" lean-forward="true" selection-start-line="325" selection-start-column="33" selection-end-line="325" selection-end-column="33" />
+            <state relative-caret-position="-4188">
+              <caret line="22" selection-start-line="22" selection-end-line="22" />
+              <folding>
+                <element signature="e#617#648#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -47,7 +49,7 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="763" />
+    <option name="x" value="159" />
     <option name="y" value="23" />
     <option name="width" value="1323" />
     <option name="height" value="794" />
@@ -134,15 +136,14 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="345" y="23" width="1323" height="794" extended-state="0" />
-    <editor active="true" />
+    <frame x="159" y="23" width="1323" height="794" extended-state="0" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.26804915" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32905984" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32905984" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -159,8 +160,11 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/FlowerTimeAnalysis.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="325" column="33" lean-forward="true" selection-start-line="325" selection-start-column="33" selection-end-line="325" selection-end-column="33" />
+        <state relative-caret-position="-4188">
+          <caret line="22" selection-start-line="22" selection-end-line="22" />
+          <folding>
+            <element signature="e#617#648#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

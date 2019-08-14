@@ -16,12 +16,12 @@ filepath_to_save_figures = "/Users/Sami/Documents/GitHub/Blueberry Data Analysis
 df = pd.read_csv(filepath + filename)
 df = df.sort_values(by=['Date', 'Flower #'], ascending=[False, True])
 
-# note: Adam's and Adams are both captured here
 ordering_dates = ["6/4/2019", "6/5/2019", "6/6/2019", "6/7/2019", "6/10/2019",
                   "6/11/2019", "6/13/2019"]
 ordering_flower_number = [0, 0, 0, 0, 0, 0, 0]
 rotation = 25
 
+# note: Adam's and Adams are both captured here
 A_Adams_dates = []
 C_Adams_dates = []
 E_Adams_dates = []
